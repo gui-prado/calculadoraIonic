@@ -1,21 +1,20 @@
 <ion-header [translucent]="true">
 	<ion-toolbar>
 		<ion-title>
-			Tab 1
+			Calculadora
 		</ion-title>
 	</ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-	<h1>  Calculadora</h1>
 	<ion-item>
 		<ion-label>Primeiro Número:</ion-label>
-		<ion-input clearInput [(ngModel)]=num1></ion-input>
+		<ion-input type="number" clearInput [(ngModel)]="num1"></ion-input>
 	</ion-item>
 
 	<ion-item>
 		<ion-label>Segundo Número:</ion-label>
-		<ion-input clearInput [(ngModel)]=num2></ion-input>
+		<ion-input type="number" clearInput [(ngModel)]="num2"></ion-input>
 	</ion-item>
 
 	<ion-grid>
@@ -42,7 +41,7 @@
 				</ion-button>
 			</ion-col>
 			<ion-col>
-				<ion-button (click)="dividir()"
+				<ion-button (click)="dividir()">
 					<strong>
           Dividir
           </strong>
@@ -50,5 +49,9 @@
 			</ion-col>
 		</ion-row>
 	</ion-grid>
+
+  <br>
+
+  <p><strong>Resposta: </strong> {{resposta}}</p>
 
 </ion-content>
