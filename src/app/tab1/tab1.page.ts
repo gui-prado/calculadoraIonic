@@ -27,4 +27,10 @@ export class Tab1Page {
   public dividir() {
     this.resposta = this.num1 / this.num2;
   }
+
+  public limpar() {
+    this.num1 = null;
+    this.num2 = null;
+    this.resposta = null;
+  }
 }
