@@ -1,16 +1,54 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
+	<ion-toolbar>
+		<ion-title>
+			Tab 1
+		</ion-title>
+	</ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <h1>  Calculadora</h1>
-<ion-item>
-  <ion-label>Primeiro Número:</ion-label>
-  <ion-input></ion-input>
-</ion-item>
+	<h1>  Calculadora</h1>
+	<ion-item>
+		<ion-label>Primeiro Número:</ion-label>
+		<ion-input clearInput [(ngModel)]=num1></ion-input>
+	</ion-item>
+
+	<ion-item>
+		<ion-label>Segundo Número:</ion-label>
+		<ion-input clearInput [(ngModel)]=num2></ion-input>
+	</ion-item>
+
+	<ion-grid>
+		<ion-row>
+			<ion-col>
+				<ion-button (click)="somar()">
+					<strong>
+          Somar
+          </strong>
+				</ion-button>
+			</ion-col>
+			<ion-col>
+				<ion-button (click)="subtrair()">
+					<strong>
+          Subtrair
+          </strong>
+				</ion-button>
+			</ion-col>
+			<ion-col>
+				<ion-button (click)="multiplicar()">
+					<strong>
+          Multiplicar
+          </strong>
+				</ion-button>
+			</ion-col>
+			<ion-col>
+				<ion-button (click)="dividir()"
+					<strong>
+          Dividir
+          </strong>
+				</ion-button>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
 
 </ion-content>
