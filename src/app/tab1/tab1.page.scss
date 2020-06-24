@@ -1,3 +1,20 @@
 ion-button {
   font-size: 10px;
 }
+
+ion-label {
+  font-weight: bolder;
+}
+
+ion-input {
+  text-align: right;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+}
+
+.resultado {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bolder;
+  color: #0000ff;
+  text-align: right;
+}

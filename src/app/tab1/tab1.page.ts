@@ -8,29 +8,42 @@ import { Component } from "@angular/core";
 export class Tab1Page {
   public num1: number;
   public num2: number;
-  public resposta: number;
+  public resultado: number;
 
-  constructor() {}
+  constructor() { }
 
+  // Função para somar os números
   public somar() {
-    this.resposta = this.num1 + this.num2;
+    if (this.num1 != null && this.num2 != null) {
+      this.resultado = this.num1 + this.num2;
+    }
   }
 
+  // Função para subtrair os números
   public subtrair() {
-    this.resposta = this.num1 - this.num2;
+    if (this.num1 != null && this.num2 != null) {
+      this.resultado = this.num1 - this.num2;
+    }
   }
 
+  // Função para multiplicar os números
   public multiplicar() {
-    this.resposta = this.num1 * this.num2;
+    if (this.num1 != null && this.num2 != null) {
+      this.resultado = this.num1 * this.num2;
+    }
   }
 
+  // Função para dividir os números
   public dividir() {
-    this.resposta = this.num1 / this.num2;
+    if (this.num1 != null && this.num2 != null) {
+      this.resultado = this.num1 / this.num2;
+    }
   }
 
+  // Função para apagar todos os números
   public limpar() {
     this.num1 = null;
     this.num2 = null;
-    this.resposta = null;
+    this.resultado = null;
   }
 }
