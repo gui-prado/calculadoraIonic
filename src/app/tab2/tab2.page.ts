@@ -43,13 +43,13 @@ export class Tab2Page {
   // Função para adicionar símbolos matemáticos no cálculo
   public addOpe(operador: string) {
 
-    // Parte da função para verificar se o resultado não é nulo...
+    // Verificar se o resultado não é nulo para igualar o cálculo no resultado
     if (this.resultado) {
       this.calculo = this.resultado.toString();
       this.resultado = null;
     }
 
-    // Parte da função para verificar se o ultimo caracter não é um símbolo
+    // Verificar se o ultimo caracter não é um símbolo
     const ultimo = this.calculo.slice(-1);
     if (this.operacoes.indexOf(ultimo) > -1) {
       return;
